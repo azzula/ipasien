@@ -37,7 +37,7 @@ class Pasiens extends LivewireDatatable
 
         return [
             Column::callback(['id'], function ($id) {
-                return view('livewire.components.table-actions', ['id' => $id]);
+                return view('livewire.components.table-actions', ['id' => $id, 'identity' => 'pasien']);
             })->unsortable()
             ->alignCenter(),
 

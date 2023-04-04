@@ -51,7 +51,7 @@ class Daerahs extends LivewireDatatable
                 ->searchable(),
 
             Column::callback(['id'], function ($id) {
-                return view('livewire.components.table-actions', ['id' => $id]);
+                return view('livewire.components.table-actions', ['id' => $id, 'identity' => 'daerah']);
             })->unsortable()
             ->alignCenter(),
         ];
